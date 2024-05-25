@@ -1,0 +1,34 @@
+body {
+
+  padding: 70px 0 0 70px;
+  margin: 0;
+  background-color: #1b1a1a;
+
+
+}
+:root {
+  --status-color: #23f926;
+}
+.status {
+  width: 30px;
+  height: 30px;
+  background-color: var(--status-color);
+  border-radius: 50%;
+  animation: status 3s ease infinite;
+  -webkit-animation: status 3s ease infinite;
+
+}
+
+@keyframes status {
+  0% {
+    box-shadow: none;
+  }
+
+  50% {
+    box-shadow: 0 0 5px 3px var(--status-color),
+    0 0 25px 7px var(--status-color);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
